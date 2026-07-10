@@ -55,91 +55,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Infinite scrolling"
-            android:id="@+id/infinitescrolling"
+            android:id="@+id/infinitescrolling" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragments"
+            android:id="@+id/Fragments"
             />
-
-
-        <RelativeLayout
-            android:layout_width="400dp"
-            android:layout_height="400dp"
-            android:layout_gravity="center">
-
-            <Button
-                android:id="@+id/center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="center" />
-
-            <Button
-                android:id="@+id/BelowCenter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_below="@+id/center"
-                android:text="Below"
-                />
-
-            <Button
-                android:id="@+id/AboveCenter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_above="@+id/center"
-                android:text="Above" />
-            <Button
-                android:id="@+id/toRightofCenter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_toRightOf="@+id/center"
-                android:text="TO Right"
-                android:layout_marginLeft="10dp"/>
-
-            <Button
-                android:id="@+id/toleftofCenter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_toLeftOf="@+id/center"
-                android:text="To left"
-                android:layout_marginRight="10dp"/>
-
-
-            <Button
-                android:id="@+id/topleft"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:text="top left" />
-
-            <Button
-                android:id="@+id/bottomleft"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:text="Bottom left" />
-
-            <Button
-                android:id="@+id/topright"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_centerInParent="true"
-                android:text="topright" />
-
-            <Button
-                android:id="@+id/bottomright"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_centerInParent="true"
-                android:text="bottomright" />
-        </RelativeLayout>
-
     </androidx.appcompat.widget.LinearLayoutCompat>
 
         <com.google.android.material.navigation.NavigationView

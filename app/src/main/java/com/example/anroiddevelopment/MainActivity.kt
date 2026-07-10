@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
           setUpToolbar()
 
       //NOW ADDING THE NAVIGATION MENU TO THE TOOLBAR AND DRAWER.
-      navigationview=findViewById(R.id.navigation_menu)  //find the NavigationView from XML using its id
+        navigationview=findViewById(R.id.navigation_menu)  //find the NavigationView from XML using its id
 
         navigationview.setNavigationItemSelectedListener { item ->  //listen for when the user taps any item inside the drawer menu
 
@@ -137,6 +137,10 @@ class MainActivity : AppCompatActivity() {
         button6Infinitescrolling.setOnClickListener {
             val n=startActivity(Intent(this, infinitescrolling::class.java))
 
+        }
+        val button7Fragment=findViewById<Button>(R.id.Fragments)
+        button7Fragment.setOnClickListener {
+            val o=startActivity(Intent(this, Fragments::class.java))
         }
 
     }
