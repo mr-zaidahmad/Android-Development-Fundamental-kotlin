@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -46,6 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Handler(Just Math)" />
+
         <Button
             android:id="@+id/Retrofit"
             android:layout_width="wrap_content"
@@ -62,6 +64,18 @@
             android:layout_height="wrap_content"
             android:text="Fragments"
             android:id="@+id/Fragments"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity LifeCycle"
+            android:id="@+id/ActivityLifeCycle"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shared Prefences"
+            android:id="@+id/SharedPrefrences"
             />
     </androidx.appcompat.widget.LinearLayoutCompat>
 

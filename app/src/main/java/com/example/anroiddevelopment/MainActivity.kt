@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
+import android.view.LayoutInflater
 import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -17,6 +18,7 @@ import androidx.core.content.ContextCompat.startActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.anroiddevelopment.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.Firebase
 import com.google.firebase.initialize
@@ -45,11 +47,15 @@ class MainActivity : AppCompatActivity() {
     //NOw lets add navigationView si fir that first lets assign NavigationView to a variable.
     private lateinit var navigationview: NavigationView
 
+    //for viewbinding
+    private lateinit var binding: ActivityMainBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        binding= ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
 
         //Using firebase analytics for my retrofit Button
@@ -100,47 +106,45 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        val button1glide=findViewById<Button>(R.id.glide)
+        binding.glide.setOnClickListener {
+            startActivity(Intent(this, GlideActivity::class.java))
 
-        button1glide.setOnClickListener {
-            val i= Intent(this, GlideActivity::class.java)
-            startActivity(i)
         }
 
-        val button2Volley =findViewById<Button>(R.id.Volley)
-        button2Volley.setOnClickListener {
-            val j = Intent(this, VollyLibrary::class.java)
-            startActivity(j)
+        binding.Volley.setOnClickListener {
+            startActivity(Intent(this, VollyLibrary::class.java))
+
         }
 
-        val button3RecyclerView=findViewById<Button>(R.id.Recycler)
-        button3RecyclerView.setOnClickListener {
-            val k= Intent(this, RecyclerViewMain::class.java)
-            startActivity(k)
+            binding.Recycler.setOnClickListener {
+                startActivity(Intent(this, RecyclerViewMain::class.java))
+
         }
 
-        val Button4Handler=findViewById<Button>(R.id.Handler)
-        Button4Handler.setOnClickListener {
-            val l= Intent(this, HandlerMainActivity::class.java)
-            startActivity(l)
+        binding.Handler.setOnClickListener {
+            startActivity( Intent(this, HandlerMainActivity::class.java))
+
         }
-        val button5Retrofit=findViewById<Button>(R.id.Retrofit)
-        button5Retrofit.setOnClickListener {
+        binding.Retrofit.setOnClickListener {
 
              //Adding firebase on the retrofit button
             //firebaseAnalytics.logEvent("retrofit_button_clicked", null)
             //throw RuntimeException("Test Crash")  //ok so enabled it only to
-
-            val m= startActivity(Intent(this, RetrofitMainActivity::class.java))   //we can also write it like this
+            startActivity(Intent(this, RetrofitMainActivity::class.java))   //we can also write it like this
         }
-        val button6Infinitescrolling=findViewById<Button>(R.id.infinitescrolling)
-        button6Infinitescrolling.setOnClickListener {
-            val n=startActivity(Intent(this, infinitescrolling::class.java))
+        binding.infinitescrolling.setOnClickListener {
+            startActivity(Intent(this, infinitescrolling::class.java))
+        }
+        binding.Fragments.setOnClickListener {
+            startActivity(Intent(this, Fragments::class.java))
+        }
+
+        binding.ActivityLifeCycle.setOnClickListener {
+            startActivity(Intent(this, ActivityLifecycle::class.java))
 
         }
-        val button7Fragment=findViewById<Button>(R.id.Fragments)
-        button7Fragment.setOnClickListener {
-            val o=startActivity(Intent(this, Fragments::class.java))
+        binding.SharedPrefrences.setOnClickListener {
+            startActivity(Intent(this, SharedPreferences::class.java))
         }
 
     }
@@ -148,7 +152,8 @@ class MainActivity : AppCompatActivity() {
 
  // SETTING UP TOOLBAR AND NAVIGATION DRAWER (we are doing it here and not creating other activity for it cuz it's done in the main activity. )
     private fun setUpToolbar() {
-     drawerLayout = findViewById(R.id.drawerLayout)
+     drawerLayout = findViewById(R.id.drawerLayout)  //we can use bindiing. instead of findviewbyid but i use find...... cuz just
+                 // to tell that we can use findview...... too.
      toolbar = findViewById(R.id.toolbar)
      setSupportActionBar(toolbar)   //it is used to tell the android to use only
      //that toolbar that we create in our xml layout not the default toolbar.
