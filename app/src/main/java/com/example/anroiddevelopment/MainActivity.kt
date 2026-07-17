@@ -15,6 +15,7 @@ import androidx.appcompat.view.ActionMode
 import androidx.appcompat.view.menu.MenuBuilder
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat.startActivity
+import androidx.core.util.Consumer
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -52,10 +53,56 @@ class MainActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+        val topicList = listOf(
+            getString(R.string.glide),
+            getString(R.string.volley),
+            getString(R.string.recyclerview),
+            getString(R.string.handler),
+            getString(R.string.retrofit),
+            getString(R.string.infinite_scrolling),
+            getString(R.string.fragments),
+            getString(R.string.activity_lifecycle),
+            getString(R.string.sharedpreferences),
+            getString(R.string.preferences_datastore),
+            getString(R.string.room_database),
+            getString(R.string.simple_mvvm),
+            getString(R.string.room_database_2),
+            getString(R.string.services),
+            getString(R.string.broadcast_receiver),
+            getString(R.string.content_provider)
+        )
+
+        binding.RecyclerViewTopics.layoutManager =
+            androidx.recyclerview.widget.LinearLayoutManager(this)
+
+        binding.RecyclerViewTopics.adapter = MainAdapter(topicList) { position ->
+
+            when (position) {
+                0 -> startActivity(Intent(this, GlideActivity::class.java))
+                1 -> startActivity(Intent(this, VollyLibrary::class.java))
+                2 -> startActivity(Intent(this, RecyclerViewMain::class.java))
+                3 -> startActivity(Intent(this, HandlerMainActivity::class.java))
+                4 -> startActivity(Intent(this, RetrofitMainActivity::class.java))
+                5 -> startActivity(Intent(this, infinitescrolling::class.java))
+                6 -> startActivity(Intent(this, Fragments::class.java))
+                7 -> startActivity(Intent(this, ActivityLifecycle::class.java))
+                8 -> startActivity(Intent(this, SharedPreferences::class.java))
+                9 -> startActivity(Intent(this, preferencesdatastore::class.java))
+                10 -> startActivity(Intent(this, RoomDatabase::class.java))
+                11 -> startActivity(Intent(this, MVVMmainActivity::class.java))
+                12 -> startActivity(Intent(this, RoomDatabaseMain::class.java))
+                13 -> startActivity(Intent(this, Services::class.java))
+                14->startActivity(Intent(this, BroadCastReciever::class.java))
+                15->startActivity(Intent(this, ContentProvider::class.java))
+            }
+        }
 
 
         //Using firebase analytics for my retrofit Button
@@ -84,68 +131,28 @@ class MainActivity : AppCompatActivity() {
             when(item.itemId){   //check WHICH item was tapped, using its id
 
                 R.id.nav_home ->{   //if home was tapped popu toast
-                    Toast.makeText(this,"home Clicked", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.home_clicked), Toast.LENGTH_SHORT).show()
                 }
                 R.id.nav_ios ->{   //if ios was tapped popu toast
-                    Toast.makeText(this,"Ios Clicked", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.ios_clicked), Toast.LENGTH_SHORT).show()
                 }
                 R.id.nav_fun ->{    //if fun staff was tapped popu toast
-                    Toast.makeText(this,"Fun Staff Clicked", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.fun_staff_clicked), Toast.LENGTH_SHORT).show()
                 }
                 R.id.nav_updates ->{   //if updates was tapped popu toast
-                    Toast.makeText(this,"Updates Clicked", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.updates_clicked), Toast.LENGTH_SHORT).show()
                 }
                 R.id.nav_settings ->{   //if setting was tapped popu toast
-                    Toast.makeText(this,"Setting Clicked", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.setting_clicked), Toast.LENGTH_SHORT).show()
                 }
                 R.id.nav_aboutus ->{   //if About us was tapped popu toast
-                    Toast.makeText(this,"Aboutus Clicked", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.about_us_clicked), Toast.LENGTH_SHORT).show()
                 }
             }
             false  //false means don't auto-highlight/select the tapped item visually
         }
 
 
-        binding.glide.setOnClickListener {
-            startActivity(Intent(this, GlideActivity::class.java))
-
-        }
-
-        binding.Volley.setOnClickListener {
-            startActivity(Intent(this, VollyLibrary::class.java))
-
-        }
-
-            binding.Recycler.setOnClickListener {
-                startActivity(Intent(this, RecyclerViewMain::class.java))
-
-        }
-
-        binding.Handler.setOnClickListener {
-            startActivity( Intent(this, HandlerMainActivity::class.java))
-
-        }
-        binding.Retrofit.setOnClickListener {
-
-             //Adding firebase on the retrofit button
-            //firebaseAnalytics.logEvent("retrofit_button_clicked", null)
-            //throw RuntimeException("Test Crash")  //ok so enabled it only to
-            startActivity(Intent(this, RetrofitMainActivity::class.java))   //we can also write it like this
-        }
-        binding.infinitescrolling.setOnClickListener {
-            startActivity(Intent(this, infinitescrolling::class.java))
-        }
-        binding.Fragments.setOnClickListener {
-            startActivity(Intent(this, Fragments::class.java))
-        }
-
-        binding.ActivityLifeCycle.setOnClickListener {
-            startActivity(Intent(this, ActivityLifecycle::class.java))
-
-        }
-        binding.SharedPrefrences.setOnClickListener {
-            startActivity(Intent(this, SharedPreferences::class.java))
-        }
 
     }
 

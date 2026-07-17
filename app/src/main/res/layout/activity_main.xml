@@ -7,13 +7,10 @@
     android:fitsSystemWindows="true"
     android:id="@+id/drawerLayout">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="40dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -22,73 +19,22 @@
             android:background="#009688"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-        <Button
-            android:id="@+id/glide"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="glide"
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/RecyclerViewTopics"/>
 
-            />
+    </LinearLayout>
 
-        <Button
-            android:id="@+id/Volley"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Volley" />
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/header">
 
-        <Button
-            android:id="@+id/Recycler"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="RecyclerView" />
-
-        <Button
-            android:id="@+id/Handler"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Handler(Just Math)" />
-
-        <Button
-            android:id="@+id/Retrofit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Retrofit" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Infinite scrolling"
-            android:id="@+id/infinitescrolling" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fragments"
-            android:id="@+id/Fragments"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Activity LifeCycle"
-            android:id="@+id/ActivityLifeCycle"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Shared Prefences"
-            android:id="@+id/SharedPrefrences"
-            />
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
-        <com.google.android.material.navigation.NavigationView
-            android:id="@+id/navigation_menu"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="start"
-            app:menu="@menu/drawer_menu"
-            app:headerLayout="@layout/header">
-
-        </com.google.android.material.navigation.NavigationView>
-
-
+    </com.google.android.material.navigation.NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>

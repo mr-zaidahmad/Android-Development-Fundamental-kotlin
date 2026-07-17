@@ -12,32 +12,32 @@ class ActivityLifecycle : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_lifecycle)
-        Toast.makeText(this,"Oncreate Called",Toast.LENGTH_SHORT).show()
+        Toast.makeText(this,getString(R.string.oncreate_called),Toast.LENGTH_SHORT).show()
     }
 
     override fun onStart() {
         super.onStart()
-        Toast.makeText(this,"Onstart Called",Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, getString(R.string.onstart_called),Toast.LENGTH_SHORT).show()
     }
 
     override fun onResume() {
         super.onResume()
-        Toast.makeText(this,"OnResume Called", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, getString(R.string.onresume_called), Toast.LENGTH_SHORT).show()
     }
 
     override fun onPause() {
         super.onPause()
-        Toast.makeText(this,"Onpaused Called", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, getString(R.string.onpaused_called), Toast.LENGTH_SHORT).show()
     }
 
     override fun onRestart() {
         super.onRestart()
-        Toast.makeText(this,"onRestart Called", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, getString(R.string.onrestart_called), Toast.LENGTH_SHORT).show()
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Toast.makeText(this,"OnDestroy called",Toast.LENGTH_SHORT).show()
+        Toast.makeText(this,getString(R.string.ondestroy_called),Toast.LENGTH_SHORT).show()
     }
 
 }

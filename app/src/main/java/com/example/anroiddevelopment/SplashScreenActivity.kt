@@ -25,8 +25,8 @@ class SplashScreenActivity : AppCompatActivity() {
             finish() // closes SplashActivity so user can't go back to it.
             //we want splash so we give finsih so that it just rin one time at the start then cleses
             //on it's own
-        }, 3000) //here we give how much time u want to run it i give 3000 mili seconds which is
-         //3 seconds.
+        }, 1000) //here we give how much time u want to run it i give 1000 mili seconds which is
+         //1 seconds.
 
     }
 }

@@ -13,7 +13,12 @@ import com.example.anroiddevelopment.databinding.ActivitySharedPreferencesBindin
 
 
 
-  // SharedPreferences is an Android feature used to store small amounts of data as key-value pairs on the device.
+//SharedPreferences
+//What it is: Android's original, oldest tool for saving small key-value pairs of data locally on the device — settings, flags, simple values.
+//How it works: Saves data synchronously — meaning it can briefly freeze the app while saving, especially on slower devices.
+//Example use: "Has the user seen the intro screen?" (true/false), a saved username, a theme preference.
+//Downside: Can silently lose data if the app crashes mid-save; older, less safe by modern standards.
+//Coroutines needed? No — works with plain, simple syntax.
 class SharedPreferences : AppCompatActivity() {
 
     // Create a View Binding object so we can access views

@@ -28,7 +28,7 @@ class VollyLibrary : AppCompatActivity() {
         val queue = Volley.newRequestQueue(this)
 
         // This is the website address we want to get data from
-        val url = "https://www.google.com"
+        val url = getString(R.string.https_www_google_com)
 
 
         val stringRequest = StringRequest(  //String request is a ready made tool from volley
@@ -42,12 +42,12 @@ class VollyLibrary : AppCompatActivity() {
             //now we tell if our websites get successfully run then what to do and if our website get
             //not succesfully run what to do then?
             //first we run the success one
-            Response.Listener<String> { response ->
+            { response ->
                 // Display the first 500 characters of the response string in a textView.
-                textView.text = "Response is: ${response.substring(0, 500)}"
+                textView.text = getString(R.string.response_is, response.substring(0, 500))
             },
             //now we tell what to do if the website doesn't run.
-            Response.ErrorListener { textView.text = "That didn't work!" })
+            { textView.text = getString(R.string.that_didn_t_work) })
 
         //// Finally, send the request by adding it to the queue
         // Without this line, nothing will actually happen

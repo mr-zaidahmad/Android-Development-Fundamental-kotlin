@@ -21,8 +21,8 @@ class GlideActivity : AppCompatActivity() {
         // Store all the image links (URLs) we want to load
         // Must be direct image links (ending in .png/.jpg), not webpage links
         val urls = arrayOf(  //taking array and storing imagges in it.
-            "https://cdn.pixabay.com/photo/2017/04/16/20/42/brain-2235771__340.png",
-            "https://cdn.pixabay.com/photo/2017/04/16/20/42/light-bulb-2235770__340.png"
+            getString(R.string.https_cdn_pixabay_com_photo_2017_04_16_20_42_brain_2235771_340_png),
+            getString(R.string.https_cdn_pixabay_com_photo_2017_04_16_20_42_light_bulb_2235770_340_png)
         )
         // Glide.with(this) -> start Glide using current screen as context
         // .load(urls[0]) -> tells Glide which image link to load

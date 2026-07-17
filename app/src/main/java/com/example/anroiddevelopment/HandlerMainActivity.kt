@@ -20,7 +20,7 @@ class HandlerMainActivity : AppCompatActivity() {
             val intent=Intent(Intent.ACTION_SEND)    //action send is the type of intent which we use it at the time
             //when we want to send something.like share a link of app to whatsapp.
 
-            intent.type="text/plain"   //here we define that the intent will share only text it is denoted as category/specifictype
+            intent.type= getString(R.string.text_plain)   //here we define that the intent will share only text it is denoted as category/specifictype
             //so here  our category is text and our type is plain
             //some more example that might showed up in future.
             //"text/html" = HTML formatted text
@@ -29,7 +29,7 @@ class HandlerMainActivity : AppCompatActivity() {
             //"video/mp4" = an MP4 video
             //"audio/mp3" = an MP3 audio file
 
-            intent.putExtra(Intent.EXTRA_TEXT,"Just for fun")  //here we write the messege that we want to share
+            intent.putExtra(Intent.EXTRA_TEXT, getString(R.string.just_for_fun))  //here we write the messege that we want to share
             //it's like println.
             startActivity(intent)   //here is call the intent.
         }
@@ -45,7 +45,7 @@ class HandlerMainActivity : AppCompatActivity() {
         val starbtn=findViewById<ImageButton>(R.id.starr)   //here it calls starr from xml file
 
         starbtn.setOnClickListener {   //here we make the image clickable.
-            Toast.makeText(this, "Toast messege appear here", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, getString(R.string.toast_messege_appear_here), Toast.LENGTH_LONG).show()
             //now here there are some alot of things use first lets discuss about toast.
             //toast is like a small messege which is unclickable and it appears near the bottom of the screen.
             //then there are two types of toasts LENGTH_LONG and LENGTH_SHORT.

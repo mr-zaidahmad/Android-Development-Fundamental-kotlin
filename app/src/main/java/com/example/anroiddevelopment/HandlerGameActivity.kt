@@ -44,7 +44,7 @@ class HandlerGameActivity : AppCompatActivity() {
     fun verifyanswer(answer :Boolean){
         if (answer ==isResultCorrect){
             score +=1
-            ScoreTextview.text="Score: $score"
+            ScoreTextview.text= getString(R.string.score, score)
         }
         generateQuestion()
     }
@@ -53,7 +53,7 @@ class HandlerGameActivity : AppCompatActivity() {
         var handler =Handler(Looper.getMainLooper())
         handler.post(object : Runnable {
             override fun run() {
-                timetextview.text = "TIME: $seconds"
+                timetextview.text = getString(R.string.time, seconds)
                 seconds--
                 if (seconds < 0) {
                     val i = Intent(this@HandlerGameActivity, HandlerScoreActivity::class.java)

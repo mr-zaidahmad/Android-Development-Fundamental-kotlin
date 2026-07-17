@@ -19,6 +19,6 @@ class HandlerScoreActivity : AppCompatActivity() {
         val score = intent.getIntExtra("score", 0)
 
         // show it on screen
-        tv.text = "Current Score : $score"
+        tv.text = getString(R.string.current_score, score)
     }
 }

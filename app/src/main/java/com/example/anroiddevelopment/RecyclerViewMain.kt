@@ -14,7 +14,17 @@ class RecyclerViewMain : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_recycler_view_main)  //calling xml file here
 
-        val namess=arrayOf<Any>("Zaid","hamza","Shahid","Abbas","Abdullah","Ibrar","Asad","Yasin","Nehal",1,3,5,7,4,7,8.9,1.0,2.0,3.0)
+        val namess=arrayOf<Any>(
+            getString(R.string.zaid),
+            getString(R.string.hamza),
+            getString(R.string.shahid),
+            getString(R.string.abbas),
+            getString(R.string.abdullah),
+            getString(R.string.ibrar),
+            getString(R.string.hamza),
+            getString(R.string.yasin),
+            getString(R.string.nehal)
+            ,1,3,5,7,4,7,8.9,1.0,2.0,3.0)
         val calling=findViewById<RecyclerView>(R.id.Listkotlin)  //here we call the recylclerView from activity_recycler_view_main.xml
 // through RecyclerViewMain id.
 

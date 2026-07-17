@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawerLayout"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/glide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="glide"
+
+            />
+
+        <Button
+            android:id="@+id/Volley"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volley" />
+
+        <Button
+            android:id="@+id/Recycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RecyclerView" />
+
+        <Button
+            android:id="@+id/Handler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Handler(Just Math)" />
+
+        <Button
+            android:id="@+id/Retrofit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retrofit" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Infinite scrolling"
+            android:id="@+id/infinitescrolling" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragments"
+            android:id="@+id/Fragments"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity LifeCycle"
+            android:id="@+id/ActivityLifeCycle"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shared Prefences"
+            android:id="@+id/SharedPrefrences"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prefences DataStore"
+            android:id="@+id/PrefrencesDataStore"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room Database"
+            android:id="@+id/RoomDatabase"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simple MVVM"
+            android:id="@+id/SimpleMVVM"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room Database2"
+            android:id="@+id/Roomdatabase2"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Services"
+            android:id="@+id/services"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>

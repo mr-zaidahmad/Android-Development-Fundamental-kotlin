@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     id("com.google.gms.google-services")
     id("com.google.firebase.crashlytics")
+    id("com.google.devtools.ksp")
 
 }
 
@@ -20,6 +21,9 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+    ksp{
+        arg(k = "room.schemaLocation", v = "${projectDir}/schemas")
     }
 
     buildTypes {
@@ -38,9 +42,11 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-    buildFeatures{   //For ViewBindind
+    buildFeatures{   //For ViewBinding and databinding
         viewBinding =true
+        dataBinding=true
     }
+
 }
 
 dependencies {
@@ -70,15 +76,30 @@ dependencies {
 
     // Import the Firebase BoM
     implementation(platform(libs.firebase.bom))
-    //adding crashlytics in my app to check
+    //adding firebase crashlytics in my app to check
     implementation(libs.firebase.crashlytics)
 
     // Add the Firebase Cloud Messaging library
     implementation(libs.firebase.messaging)
 
+    // Activity KTX for viewModels()
+    implementation(libs.androidx.activity.ktx.v193)
 
+    // Coroutines
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
 
+    // Coroutine Lifecycle Scopes
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
 
+    // DataStore
+    implementation(libs.androidx.datastore.preferences)
+    implementation(libs.androidx.datastore.preferences.core)
+
+    //for RoomDatabase
+    implementation(libs.androidx.room.runtime)
+    ksp(libs.androidx.room.compiler)
 
 
 

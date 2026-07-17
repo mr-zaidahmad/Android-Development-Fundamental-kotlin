@@ -16,9 +16,20 @@ class infinitescrolling : AppCompatActivity() {
 
     // Moved to class-level (outside onCreate) so fetchData() can also access it
     private val list = mutableListOf(
-        "Zaid", "hamza", "Shahid", "Abbas", "Abdullah", "Ibrar", "Asad", "Yasin", "Nehal",
-        "Zaid", "hamza", "Shahid", "Abbas", "Abdullah", "Ibrar", "Asad", "Yasin", "Nehal",
-        "Zaid", "hamza", "Shahid", "Abbas", "Abdullah", "Ibrar", "Asad", "Yasin", "Nehal"
+        getString(R.string.zaid),
+        getString(R.string.hamza),
+        getString(R.string.shahid),
+        getString(R.string.abbas),
+        getString(R.string.abdullah),
+        getString(R.string.ibrar),
+        getString(R.string.asad),
+        getString(R.string.yasin),
+        getString(R.string.nehal),
+        getString(R.string.zaid),
+        getString(R.string.hamza),
+        getString(R.string.shahid),
+        getString(R.string.abbas),
+        getString(R.string.abdullah),
     )
 
     // Also moved to class-level, since fetchData() needs to reach them too
