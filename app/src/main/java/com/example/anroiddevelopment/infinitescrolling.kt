@@ -15,23 +15,7 @@ class infinitescrolling : AppCompatActivity() {
     private var Isscrolling: Boolean = false
 
     // Moved to class-level (outside onCreate) so fetchData() can also access it
-    private val list = mutableListOf(
-        getString(R.string.zaid),
-        getString(R.string.hamza),
-        getString(R.string.shahid),
-        getString(R.string.abbas),
-        getString(R.string.abdullah),
-        getString(R.string.ibrar),
-        getString(R.string.asad),
-        getString(R.string.yasin),
-        getString(R.string.nehal),
-        getString(R.string.zaid),
-        getString(R.string.hamza),
-        getString(R.string.shahid),
-        getString(R.string.abbas),
-        getString(R.string.abdullah),
-    )
-
+    private val list = mutableListOf<String>()
     // Also moved to class-level, since fetchData() needs to reach them too
     private lateinit var adapter: Aadapter
     private lateinit var manager: LinearLayoutManager
@@ -41,6 +25,25 @@ class infinitescrolling : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_infinitescrolling)
+
+        list.addAll(
+            listOf(
+                getString(R.string.zaid),
+                getString(R.string.hamza),
+                getString(R.string.shahid),
+                getString(R.string.abbas),
+                getString(R.string.abdullah),
+                getString(R.string.ibrar),
+                getString(R.string.asad),
+                getString(R.string.yasin),
+                getString(R.string.nehal),
+                getString(R.string.zaid),
+                getString(R.string.hamza),
+                getString(R.string.shahid),
+                getString(R.string.abbas),
+                getString(R.string.abdullah)
+            )
+        )
         pregressbarr=findViewById<ProgressBar>(R.id.progressbar)
 
         val calling = findViewById<RecyclerView>(R.id.recyclerview)
