@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RatioConstraintLayout">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="40dp">
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="1:1  which is used in square(like Photos)"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.01" />
+
+       <ImageView
+        android:id="@+id/image1"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:src="@drawable/oneone"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="40dp"
+
+        app:layout_constraintDimensionRatio="1:1"
+        />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="16:9 which is used in youtubeThumbNail"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/image1"
+           app:layout_constraintVertical_bias="0.01" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:src="@drawable/sixteen_nine"
+
+        app:layout_constraintTop_toBottomOf="@+id/image1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="40dp"
+
+        app:layout_constraintDimensionRatio="16:9"
+        />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="4:3 which is used in Old TvScreens"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/image2"
+           app:layout_constraintVertical_bias="0.01" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:src="@drawable/four_three"
+
+        app:layout_constraintTop_toBottomOf="@+id/image2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="40dp"
+
+        app:layout_constraintDimensionRatio="4:3"
+        />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="3:2 which is used in Camera Photo"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/image3"
+           app:layout_constraintVertical_bias="0.01" />
+
+           <ImageView
+               android:id="@+id/image4"
+               android:layout_width="200dp"
+               android:layout_height="0dp"
+               android:src="@drawable/three_two"
+
+               app:layout_constraintTop_toBottomOf="@+id/image3"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+
+               android:layout_marginTop="40dp"
+
+               app:layout_constraintDimensionRatio="3:2"
+               />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="9:16 which is used in Portrait Videos"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/image4"
+           app:layout_constraintVertical_bias="0.01" />
+
+           <ImageView
+               android:id="@+id/image5"
+               android:layout_width="200dp"
+               android:layout_height="0dp"
+               android:src="@drawable/nine_sixteen"
+
+               app:layout_constraintTop_toBottomOf="@+id/image4"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+
+               android:layout_marginTop="40dp"
+
+               app:layout_constraintDimensionRatio="9:16"
+               />
+
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="If u really want to see how these ratio are working,Remove the 200dp width from code. i made it small so that i can see it clearly"
+           android:textSize="20sp"
+           android:layout_marginBottom="90sp"
+           app:layout_constraintTop_toBottomOf="@+id/image5"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

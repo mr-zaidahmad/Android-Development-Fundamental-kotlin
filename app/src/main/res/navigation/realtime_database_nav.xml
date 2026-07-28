@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/realtime_database_nav"
+    app:startDestination="@id/firebaseRealtimeDatabaseMainScreen">
+
+    <fragment
+        android:id="@+id/firebaseRealtimeDatabaseMainScreen"
+        android:name="com.example.anroiddevelopment.FirebaseRealtimeDatabaseMainScreen"
+        android:label="fragment_firebase_realtime_database_main_screen"
+        tools:layout="@layout/fragment_firebase_realtime_database_main_screen" >
+        <action
+            android:id="@+id/action_firebaseRealtimeDatabaseMainScreen_to_firebaseRealtimeDatabaseInsertData"
+            app:destination="@id/firebaseRealtimeDatabaseInsertData" />
+        <action
+            android:id="@+id/action_firebaseRealtimeDatabaseMainScreen_to_firebaseRealtimeDatabaseFetchData"
+            app:destination="@id/firebaseRealtimeDatabaseFetchData" />
+    </fragment>
+    <fragment
+        android:id="@+id/firebaseRealtimeDatabaseInsertData"
+        android:name="com.example.anroiddevelopment.FirebaseRealtimeDatabaseInsertData"
+        android:label="fragment_firebase_realtime_database_insert_data"
+        tools:layout="@layout/fragment_firebase_realtime_database_insert_data" />
+    <fragment
+        android:id="@+id/firebaseRealtimeDatabaseFetchData"
+        android:name="com.example.anroiddevelopment.FirebaseRealtimeDatabaseFetchData"
+        android:label="fragment_firebase_realtime_database_fetch_data"
+        tools:layout="@layout/fragment_firebase_realtime_database_fetch_data" >
+        <action
+            android:id="@+id/action_firebaseRealtimeDatabaseFetchData_to_firebaseRealtimeDatabaseDetails"
+            app:destination="@id/firebaseRealtimeDatabaseDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/firebaseRealtimeDatabaseDetails"
+        android:name="com.example.anroiddevelopment.FirebaseRealtimeDatabaseDetails"
+        android:label="fragment_firebase_realtime_database_details"
+        tools:layout="@layout/fragment_firebase_realtime_database_details" />
+</navigation>

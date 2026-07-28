@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/etDrugName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Drug Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etDrugDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Drug Description"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/etSideEffect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Side Effect"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/etPrevention"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Prevention"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/etTreatment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Treatment"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnUpdateData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Update Data" />
+
+</LinearLayout>

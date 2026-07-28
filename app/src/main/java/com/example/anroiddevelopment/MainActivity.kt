@@ -2,31 +2,14 @@ package com.example.anroiddevelopment
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import android.util.Log
-import android.view.LayoutInflater
-import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.view.ActionMode
-import androidx.appcompat.view.menu.MenuBuilder
 import androidx.appcompat.widget.Toolbar
-import androidx.core.content.ContextCompat.startActivity
-import androidx.core.util.Consumer
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.anroiddevelopment.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
-import com.google.firebase.Firebase
-import com.google.firebase.initialize
-import com.google.firebase.messaging.FirebaseMessaging
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 class MainActivity : AppCompatActivity() {
 
@@ -64,7 +47,7 @@ class MainActivity : AppCompatActivity() {
             getString(R.string.glide),
             getString(R.string.volley),
             getString(R.string.recyclerview),
-            getString(R.string.handler),
+            getString(R.string.just_math_app),
             getString(R.string.retrofit),
             getString(R.string.infinite_scrolling),
             getString(R.string.fragments),
@@ -75,8 +58,16 @@ class MainActivity : AppCompatActivity() {
             getString(R.string.simple_mvvm),
             getString(R.string.room_database_2),
             getString(R.string.services),
+            getString(R.string.work_manager),
             getString(R.string.broadcast_receiver),
-            getString(R.string.content_provider)
+            getString(R.string.content_provider),
+            getString(R.string.navigation_host),
+            getString(R.string.threads_demo),
+            getString(R.string.coroutines),
+            getString(R.string.coroutinespractice),
+            getString(R.string.firebase_realtime_database),
+            getString(R.string.xml_components)
+
         )
 
         binding.RecyclerViewTopics.layoutManager =
@@ -85,22 +76,29 @@ class MainActivity : AppCompatActivity() {
         binding.RecyclerViewTopics.adapter = MainAdapter(topicList) { position ->
 
             when (position) {
-                0 -> startActivity(Intent(this, GlideActivity::class.java))
-                1 -> startActivity(Intent(this, VollyLibrary::class.java))
-                2 -> startActivity(Intent(this, RecyclerViewMain::class.java))
-                3 -> startActivity(Intent(this, HandlerMainActivity::class.java))
-                4 -> startActivity(Intent(this, RetrofitMainActivity::class.java))
-                5 -> startActivity(Intent(this, infinitescrolling::class.java))
-                6 -> startActivity(Intent(this, Fragments::class.java))
-                7 -> startActivity(Intent(this, ActivityLifecycle::class.java))
-                8 -> startActivity(Intent(this, SharedPreferences::class.java))
-                9 -> startActivity(Intent(this, preferencesdatastore::class.java))
-                10 -> startActivity(Intent(this, RoomDatabase::class.java))
-                11 -> startActivity(Intent(this, MVVMmainActivity::class.java))
-                12 -> startActivity(Intent(this, RoomDatabaseMain::class.java))
-                13 -> startActivity(Intent(this, Services::class.java))
-                14->startActivity(Intent(this, BroadCastReciever::class.java))
-                15->startActivity(Intent(this, ContentProvider::class.java))
+                0 ->  startActivity(Intent(this, GlideActivity::class.java))
+                1 ->  startActivity(Intent(this, VollyLibrary::class.java))
+                2 ->  startActivity(Intent(this, RecyclerViewMain::class.java))
+                3 ->  startActivity(Intent(this, HandlerMainActivity::class.java))
+                4 ->  startActivity(Intent(this, RetrofitMainActivity::class.java))
+                5 ->  startActivity(Intent(this, infinitescrolling::class.java))
+                6 ->  startActivity(Intent(this, Fragments::class.java))
+                7 ->  startActivity(Intent(this, ActivityLifecycle::class.java))
+                8 ->  startActivity(Intent(this, SharedPreferences::class.java))
+                9 ->  startActivity(Intent(this, preferencesdatastore::class.java))
+                10->  startActivity(Intent(this, RoomDatabase::class.java))
+                11->  startActivity(Intent(this, MVVMmainActivity::class.java))
+                12->  startActivity(Intent(this, RoomDatabaseMain::class.java))
+                13->  startActivity(Intent(this, Services::class.java))
+                14->  startActivity(Intent(this, WorkManager::class.java))
+                15->  startActivity(Intent(this, BroadCastReciever::class.java))
+                16->  startActivity(Intent(this, ContentProvider::class.java))
+                17->  startActivity(Intent(this, NavigationHost::class.java))
+                18 -> startActivity(Intent(this, ThreadsDemo::class.java))
+                19 -> startActivity(Intent(this, Coroutines::class.java))
+                20 ->startActivity(Intent(this, coroutinesPractice::class.java))
+                21->startActivity(Intent(this, FirebaseRealtimeDatabase::class.java))
+                22 ->startActivity(Intent(this, XMLViewActivity::class.java))
             }
         }
 

@@ -1,14 +1,15 @@
 [versions]
 activityKtxVersion = "1.9.3"
-agp = "8.9.2"
+agp = "9.2.1"
 appcompatVersion = "1.7.0"
 cardview = "1.0.0"
 datastorePreferencesCore = "1.1.1"
 drawerlayout = "1.2.0"
 firebaseBom = "34.15.0"
+firebaseBomVersion = "34.16.0"
 glide = "4.16.0"
 jsoup = "1.22.2"
-kotlin = "2.2.0"
+kotlin = "2.2.10"
 coreKtx = "1.18.0"
 junit = "4.13.2"
 junitVersion = "1.3.0"
@@ -27,6 +28,10 @@ retrofit = "2.11.0"
 roomRuntime = "2.7.2"
 volley = "1.2.1"
 activityKtx = "1.13.0"
+workRuntimeKtx = "2.10.4"
+navigationFragmentKtx = "2.9.8"
+navigationUiKtx = "2.9.8"
+fragment = "1.8.9"
 
 
 [libraries]
@@ -43,11 +48,14 @@ androidx-recyclerview = { module = "androidx.recyclerview:recyclerview", version
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRuntime" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+androidx-work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "workRuntimeKtx" }
 compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
 firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-bom-v34160 = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBomVersion" }
 firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics" }
+firebase-database = { module = "com.google.firebase:firebase-database" }
 firebase-messaging = { module = "com.google.firebase:firebase-messaging" }
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 jsoup = { module = "org.jsoup:jsoup", version.ref = "jsoup" }
@@ -65,6 +73,9 @@ material-v1120 = { module = "com.google.android.material:material", version.ref 
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 volley = { module = "com.android.volley:volley", version.ref = "volley" }
 androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activityKtx" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+androidx-fragment = { group = "androidx.fragment", name = "fragment", version.ref = "fragment" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

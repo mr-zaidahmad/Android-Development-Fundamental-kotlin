@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/regiser_fragment">
+
+    <fragment
+        android:id="@+id/regiser_fragment"
+        android:name="com.example.anroiddevelopment.regiser_fragment"
+        android:label="fragment_regiser_fragment"
+        tools:layout="@layout/fragment_regiser_fragment" >
+        <action
+            android:id="@+id/action_regiser_fragment_to_login_Fragment"
+            app:destination="@id/login_Fragment"
+            app:popUpTo="@id/regiser_fragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="username"
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/login_Fragment"
+        android:name="com.example.anroiddevelopment.Login_Fragment"
+        android:label="fragment_login_"
+        tools:layout="@layout/fragment_login_" >
+        <action
+            android:id="@+id/action_login_Fragment_to_main_Fragment"
+            app:destination="@id/main_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/main_Fragment"
+        android:name="com.example.anroiddevelopment.Main_Fragment"
+        android:label="fragment_main_"
+        tools:layout="@layout/fragment_main_" >
+        <action
+            android:id="@+id/action_main_Fragment_to_notes_Fragments"
+            app:destination="@id/notes_Fragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/notes_Fragments"
+        android:name="com.example.anroiddevelopment.Notes_Fragments"
+        android:label="fragment_notes__fragments"
+        tools:layout="@layout/fragment_notes__fragments" />
+</navigation>

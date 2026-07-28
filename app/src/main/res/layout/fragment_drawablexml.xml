@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Drawablexml"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A drawable XML only defines the background/shape of a view. It cannot style the text inside a Button or TextView."
+          android:background="@drawable/background_yellow"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drawable XML"
+        android:textSize="20sp"
+        android:background="#2196F3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drawable XML"
+        android:textSize="20sp"
+        android:background="@drawable/background_green"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Normal Button"
+        android:textAllCaps="false"
+         android:backgroundTint="@color/Primary_Yellow"
+        android:textSize="20sp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Material Button"
+        android:textAllCaps="false"
+        android:background="@drawable/green_button"
+        android:textColor="@android:color/white"
+        style="@style/GreenMaterialButton"
+        android:textSize="20sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gradient Button"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/gradient_button"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>

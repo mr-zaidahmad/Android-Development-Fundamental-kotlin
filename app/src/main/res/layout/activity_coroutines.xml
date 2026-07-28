@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Coroutines">
+
+
+    <Button
+        android:id="@+id/SuspendFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Suspend Function"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/CoroutinesBuilders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Coroutines Builders"
+        app:layout_constraintEnd_toEndOf="@+id/SuspendFunction"
+        app:layout_constraintStart_toStartOf="@+id/SuspendFunction"
+        app:layout_constraintTop_toBottomOf="@+id/SuspendFunction" />
+
+    <Button
+        android:id="@+id/CoroutinesJobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Coroutines Jobs"
+        app:layout_constraintEnd_toEndOf="@+id/CoroutinesBuilders"
+        app:layout_constraintStart_toStartOf="@+id/CoroutinesBuilders"
+        app:layout_constraintTop_toBottomOf="@+id/CoroutinesBuilders" />
+
+    <Button
+        android:id="@+id/Withcontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Withcontext"
+        app:layout_constraintEnd_toEndOf="@+id/CoroutinesJobs"
+        app:layout_constraintStart_toStartOf="@+id/CoroutinesJobs"
+        app:layout_constraintTop_toBottomOf="@+id/CoroutinesJobs" />
+
+    <Button
+        android:id="@+id/Runblocking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Runblocking"
+        app:layout_constraintEnd_toEndOf="@+id/Withcontext"
+        app:layout_constraintStart_toStartOf="@+id/Withcontext"
+        app:layout_constraintTop_toBottomOf="@+id/Withcontext" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

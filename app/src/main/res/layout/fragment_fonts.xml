@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fonts"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="If u want to have more Fonts Just Download it from Google Fonts"
+         android:layout_marginBottom="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Poppins Black Italic Font"
+        android:fontFamily="@font/poppins_blackitalic"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Poppins Bold Font"
+        android:fontFamily="@font/poppins_bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Poppins Bold Italic Font"
+        android:fontFamily="@font/poppins_bolditalic"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Poppins Extra Bold Font"
+        android:fontFamily="@font/poppins_extrabold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Poppins Black Font"
+        android:fontFamily="@font/poppins_black"/>
+
+</LinearLayout>

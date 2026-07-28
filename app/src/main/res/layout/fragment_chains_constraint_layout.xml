@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ChainsConstraintLayout">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A Chain is used when you have multiple views connected together.Instead of manually giving margins, Android arranges them for you. there are Three Types of chains."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <!--     first Type:Spread-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First type:Spread"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/BtnOne"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Button 1"
+       android:layout_marginTop="100dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintEnd_toStartOf="@+id/Btntwo"
+
+       app:layout_constraintHorizontal_chainStyle="spread"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Btntwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 2"
+
+        app:layout_constraintEnd_toStartOf="@+id/BtnThree"
+        app:layout_constraintTop_toTopOf="@+id/BtnOne"
+        app:layout_constraintStart_toEndOf="@+id/BtnOne"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BtnThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 3"
+        app:layout_constraintStart_toEndOf="@id/Btntwo"
+        app:layout_constraintTop_toTopOf="@id/BtnOne"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+       <!--     Second Type:Spread_Inside-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First type:spread_inside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BtnOneone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:text="Button 1"
+        app:layout_constraintEnd_toStartOf="@+id/Btntwotwo"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Btntwotwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 2"
+
+        app:layout_constraintEnd_toStartOf="@+id/BtnThreethree"
+        app:layout_constraintTop_toTopOf="@+id/BtnOneone"
+        app:layout_constraintStart_toEndOf="@+id/BtnOneone"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BtnThreethree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 3"
+        app:layout_constraintStart_toEndOf="@id/Btntwotwo"
+        app:layout_constraintTop_toTopOf="@id/BtnOneone"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+       <!--     Third Type:Packed-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First type:Packed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.554" />
+
+    <androidx.appcompat.widget.AppCompatButton
+     android:id="@+id/BtnOneoneone"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="440dp"
+     android:text="Button 1"
+     app:layout_constraintEnd_toStartOf="@+id/Btntwotwotwo"
+     app:layout_constraintHorizontal_bias="0.492"
+
+     app:layout_constraintHorizontal_chainStyle="packed"
+
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+ <androidx.appcompat.widget.AppCompatButton
+     android:id="@+id/Btntwotwotwo"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Button 2"
+
+     app:layout_constraintEnd_toStartOf="@+id/BtnThreethreethree"
+     app:layout_constraintTop_toTopOf="@+id/BtnOneoneone"
+     app:layout_constraintStart_toEndOf="@+id/BtnOneoneone"
+     />
+
+ <androidx.appcompat.widget.AppCompatButton
+     android:id="@+id/BtnThreethreethree"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Button 3"
+     app:layout_constraintStart_toEndOf="@id/Btntwotwotwo"
+     app:layout_constraintTop_toTopOf="@id/BtnOneoneone"
+     app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

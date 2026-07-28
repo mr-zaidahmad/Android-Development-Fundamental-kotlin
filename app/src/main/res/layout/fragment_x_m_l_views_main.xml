@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XMLViewsMainFragment"
+    android:paddingTop="30dp"
+    android:paddingBottom="50dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+    <Button
+        android:id="@+id/ScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Scrollview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/SelectionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SelectionView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ScrollView"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/Progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SelectionView"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/dateandtimeview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date and time View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Progressbar"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/GridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateandtimeview"
+        android:textAllCaps="false"/>
+
+    <Button
+    android:id="@+id/FrameLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Frame Layout"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/GridLayout"
+    android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/Materialcomponents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Material Components"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FrameLayout"
+        android:textAllCaps="false"/>
+
+
+    <Button
+        android:id="@+id/DrawableXML"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drawable XML"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Materialcomponents"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/Styless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Styles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DrawableXML"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/Guidelines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guidelines(ConstraintLayout)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Styless"
+        android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/Barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Barrier(ConstraintLayout)"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Guidelines"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/Chains"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chains(ConstraintLayout)"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Barrier"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/Bias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bias(ConstraintLayout)"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Chains"
+                android:textAllCaps="false"/>
+
+
+            <Button
+                android:id="@+id/Ratio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ratio(ConstraintLayout)"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Bias"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/AplhaAnimationn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alpha Animation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Ratio"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/ScaleAnimationn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scale Animation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/AplhaAnimationn"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/RotateAnimationn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rotate Animation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ScaleAnimationn"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/TranslateAnimationn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Translate Animation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RotateAnimationn"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/Colors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Colors.XML"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TranslateAnimationn"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/Fonts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fonts"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Colors"
+                android:textAllCaps="false"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

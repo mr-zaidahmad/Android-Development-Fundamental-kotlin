@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Styles_"
+    android:gravity="center"
+    android:orientation="vertical">
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       style="@style/GreenButton"
+       android:text="Style button"
+       />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/GreenButton"
+        android:text="Style Button"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Style Button"
+        style="@style/GreenButton"
+        app:backgroundTint="@null"
+
+       />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/yellowBUtton"
+        android:text="MY own Style button"
+        />
+
+
+
+</LinearLayout>

@@ -54,6 +54,9 @@ dependencies {
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.fragment)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
@@ -63,7 +66,6 @@ dependencies {
     implementation(libs.volley)  //to use volley library we have to use this dependency without it we can't use volley library
     implementation(libs.glide)    //to use glide library we have to use this dependency without it we can't use glide library
     annotationProcessor(libs.compiler)
-    implementation(libs.material.v1120)
     implementation(libs.androidx.appcompat.v170)
     implementation(libs.androidx.drawerlayout)  //to use navigation drawer we use this dependency without it we can't use drawer
     implementation(libs.androidx.cardview)  //to use cardview we use this dependency without it we can't use cardview
@@ -97,10 +99,16 @@ dependencies {
     implementation(libs.androidx.datastore.preferences)
     implementation(libs.androidx.datastore.preferences.core)
 
+    //for WorkManager
+    implementation(libs.androidx.work.runtime.ktx)
+
     //for RoomDatabase
     implementation(libs.androidx.room.runtime)
     ksp(libs.androidx.room.compiler)
 
 
+    //for firebase realtime database
+    implementation(platform(libs.firebase.bom.v34160))
+    implementation(libs.firebase.database)
 
 }

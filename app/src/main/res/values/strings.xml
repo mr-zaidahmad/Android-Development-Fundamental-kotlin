@@ -64,4 +64,14 @@
     <string name="https_www_google_com">https://www.google.com</string>
     <string name="response_is">Response is: %1$s</string>
     <string name="that_didn_t_work">That didn\'t work!</string>
+    <string name="work_manager">Work Manager</string>
+    <string name="navigation_host">Navigation Host</string>
+    <string name="thread">Thread</string>
+    <string name="just_math_app">Just Math app</string>
+    <string name="threads_demo">Threads Demo</string>
+    <string name="coroutines">Coroutines</string>
+    <string name="coroutinespractice">coroutinesPractice</string>
+    <string name="firebase_realtime_database">Firebase RealTime Database</string>
+    <string name="scrollview">Scrollview</string>
+    <string name="xml_components">XML Components</string>
 </resources>

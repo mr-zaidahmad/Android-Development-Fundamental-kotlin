@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MaterialComponents"
+    android:orientation="vertical"
+    android:gravity="center">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="The difference between the normal button or textView and the material button or the material TextView is that u can modify the material button inside the button u don't have to go to the drawable to modify the button like we did with normal buttons there are more things in material components but for now we are only using material button and material textview."
+         android:textSize="20sp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Material Button"
+        app:cornerRadius="20dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@android:color/black"
+        app:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"/>
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Material TextView"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_bright"
+        android:fontFamily="sans-serif-condensed-light"/>
+
+</LinearLayout>
