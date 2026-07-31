@@ -218,6 +218,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/Colors"
                 android:textAllCaps="false"/>
 
+            <Button
+                android:id="@+id/longPress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Long Press"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Fonts"
+                android:textAllCaps="false"/>
+
+
 
 
         </LinearLayout>

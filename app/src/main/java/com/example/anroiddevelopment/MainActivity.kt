@@ -66,7 +66,22 @@ class MainActivity : AppCompatActivity() {
             getString(R.string.coroutines),
             getString(R.string.coroutinespractice),
             getString(R.string.firebase_realtime_database),
-            getString(R.string.xml_components)
+            getString(R.string.xml_components),
+            getString (R.string.spinner),
+            getString(R.string.darkmode),
+            getString(R.string.popup_menu),
+            getString(R.string.bottomsheet),
+            getString(R.string.flow),
+            getString(R.string.stateflow),
+            getString(R.string.sharedflow),
+            getString(R.string.runtime_permissions),
+            getString(R.string.takingpicture),
+            getString(R.string.playing_videos_exoplayer),
+            getString(R.string.encrypted_shared_preferences),
+            getString(R.string.save_image_in_gallery),
+            getString(R.string.readimage_from_gallery),
+            "Save Video",
+            "Read Video From Gallery"
 
         )
 
@@ -96,9 +111,24 @@ class MainActivity : AppCompatActivity() {
                 17->  startActivity(Intent(this, NavigationHost::class.java))
                 18 -> startActivity(Intent(this, ThreadsDemo::class.java))
                 19 -> startActivity(Intent(this, Coroutines::class.java))
-                20 ->startActivity(Intent(this, coroutinesPractice::class.java))
-                21->startActivity(Intent(this, FirebaseRealtimeDatabase::class.java))
-                22 ->startActivity(Intent(this, XMLViewActivity::class.java))
+                20 -> startActivity(Intent(this, coroutinesPractice::class.java))
+                21->  startActivity(Intent(this, FirebaseRealtimeDatabase::class.java))
+                22 -> startActivity(Intent(this, XMLViewActivity::class.java))
+                23->  startActivity(Intent(this, Spinner::class.java))
+                24->  startActivity(Intent(this, DarkMode::class.java))
+                25->  startActivity(Intent(this, PopMenu::class.java))
+                26->startActivity(Intent(this, BottomSheet::class.java))
+                27->startActivity(Intent(this, Flow::class.java))
+                28->startActivity(Intent(this, StateFlow::class.java))
+                29->startActivity(Intent(this, SharedFlow::class.java))
+                30->startActivity(Intent(this, RuntimePermissionActivity::class.java))
+                31->startActivity(Intent(this, TakingPicture::class.java))
+                32->startActivity(Intent(this, ExoPlayer::class.java))
+                33->startActivity(Intent(this, EncryptedSharedPreference::class.java))
+                34->startActivity(Intent(this, SavedImageMediastore::class.java))
+                35->startActivity(Intent(this, ReadImageMediaStore::class.java))
+                36->startActivity(Intent(this, SaveVideoMediaStore::class.java))
+                37->startActivity(Intent(this, ReadVideoMediaStore::class.java))
             }
         }
 

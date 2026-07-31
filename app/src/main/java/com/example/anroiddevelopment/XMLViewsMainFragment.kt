@@ -93,6 +93,9 @@ class XMLViewsMainFragment : Fragment() {
         binding.Fonts.setOnClickListener {
             findNavController().navigate(R.id.action_XMLViewsMainFragment_to_fonts)
         }
+        binding.longPress.setOnClickListener {
+            findNavController().navigate(R.id.action_XMLViewsMainFragment_to_longPress)
+        }
 
     }
 }

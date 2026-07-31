@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ANROID DEVELOPMENT</string>
+    <string name="app_name">ANDROID DEVELOPMENT</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="when_the_timer_in_a_phone_clock_a_minute_gets_changed_in_it_like_rn_it_s_4_54_and_when_it_s_hit_4_55_a_toast_will_appear_that_how_dynamic_broadcast_works">when the timer in a phone clock a minute gets changed in it like RN it\'s 4:54 and when it\'s hit 4:55 A toast will appear that how dynamic Broadcast works.</string>
@@ -74,4 +74,42 @@
     <string name="firebase_realtime_database">Firebase RealTime Database</string>
     <string name="scrollview">Scrollview</string>
     <string name="xml_components">XML Components</string>
+    <string name="spinner">Spinner</string>
+    <string name="darkmode">Darkmode</string>
+    <string name="popup_menu">Popup Menu</string>
+    <string name="bottomsheet">BottomSheet</string>
+    <string name="application_class">Application Class</string>
+    <string name="flow">Flow</string>
+    <string name="stateflow">StateFlow</string>
+    <string name="sharedflow">SharedFlow</string>
+    <string name="runtime_permissions">RunTime Permissions</string>
+    <string name="takingpicture">TakingPicture</string>
+    <string name="playing_videos_exoplayer">Playing Videos(ExoPlayer)</string>
+    <string name="encrypted_shared_preferences">Encrypted Shared Preferences</string>
+    <string name="save_image_in_gallery">Save Image in Gallery</string>
+    <string name="readimage_from_gallery">ReadImage from Gallery</string>
+
+
+    <string-array name="Countries">
+        <item>Select Country</item>
+        <item>India</item>
+        <item>Pakistan</item>
+        <item>Germany</item>
+        <item>USA</item>
+        <item>Afghanistan</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string-array name="City">
+        <item>Select City</item>
+        <item>Peshawar</item>
+        <item>karachi</item>
+        <item>lahore</item>
+        <item>Islamabad</item>
+        <item>Pindi</item>
+        <item>Hyderabad</item>
+        <item>Quetta</item>
+
+    </string-array>
 </resources>

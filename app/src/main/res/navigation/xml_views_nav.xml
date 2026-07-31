@@ -73,6 +73,9 @@
         <action
             android:id="@+id/action_XMLViewsMainFragment_to_fonts"
             app:destination="@id/fonts" />
+        <action
+            android:id="@+id/action_XMLViewsMainFragment_to_longPress"
+            app:destination="@id/longPress" />
     </fragment>
     <fragment
         android:id="@+id/scrollView2"
@@ -174,4 +177,9 @@
         android:name="com.example.anroiddevelopment.Fonts"
         android:label="fragment_fonts"
         tools:layout="@layout/fragment_fonts" />
+    <fragment
+        android:id="@+id/longPress"
+        android:name="com.example.anroiddevelopment.LongPress"
+        android:label="fragment_long_press"
+        tools:layout="@layout/fragment_long_press" />
 </navigation>

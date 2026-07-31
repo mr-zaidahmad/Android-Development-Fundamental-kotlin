@@ -111,4 +111,18 @@ dependencies {
     implementation(platform(libs.firebase.bom.v34160))
     implementation(libs.firebase.database)
 
+
+    //for Accessing OwnMobile Camera
+    implementation(libs.androidx.camera.camera2)
+    implementation(libs.androidx.camera.lifecycle)
+    implementation(libs.androidx.camera.view)
+
+
+    //for ExoPlayer(video and Audio Playing)
+    implementation(libs.androidx.media3.exoplayer)
+    implementation(libs.media3.ui)
+
+
+    //For Encrypted Shared preferences
+    implementation(libs.androidx.security.crypto)
 }

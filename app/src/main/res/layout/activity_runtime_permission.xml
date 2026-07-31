@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RuntimePermissionActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera Permission"
+        android:textAllCaps="false"
+        android:id="@+id/CameraButton"
+        android:layout_marginBottom="10dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location Permission"
+        android:textAllCaps="false"
+        android:id="@+id/LocationPermission"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Storage Permission"
+        android:textAllCaps="false"
+        android:id="@+id/storagePermission"
+        android:layout_marginBottom="10dp"
+        />
+
+
+</LinearLayout>
